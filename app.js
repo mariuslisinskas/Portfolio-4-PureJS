@@ -172,8 +172,8 @@ class ToDoListDOM {
 
 
 const l1 = new ToDoList(CREATED);
-// const l2 = new ToDoList(PROGRESS);
-// const l3 = new ToDoList(DONE);
+const l2 = new ToDoList(PROGRESS);
+const l3 = new ToDoList(DONE);
 
 const todo = new ToDoListDOM();
 
