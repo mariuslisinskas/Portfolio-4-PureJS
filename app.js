@@ -93,11 +93,11 @@ class ToDoListDOM {
 
     confirmDelete(id, type) {
         const div = document.createElement('div');
-        const text = document.createTextNode('Really?');
+        const text = document.createTextNode('Are you sure?');
         const deleteButton = document.createElement('button');
         const cancelButton = document.createElement('button');
-        const deleteText = document.createTextNode('delete');
-        const cancelText = document.createTextNode('Nop');
+        const deleteText = document.createTextNode('Yes, delete');
+        const cancelText = document.createTextNode('No');
         deleteButton.appendChild(deleteText);
         cancelButton.appendChild(cancelText);
         div.appendChild(text);

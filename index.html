@@ -1,41 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>SwiperTasks</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
-    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@300&display=swap" rel="stylesheet">    <script src="app.js" defer></script>
+    <!-- Demo styles -->
     <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Rajdhani', sans-serif;  
+        overflow: hidden;
+      
+
+
+      }
+      header{
+          width: 100%;
+          height: 70px;
+          background-color: black;
+          padding: 30px;
+          /* border-bottom: 5px solid #ee0405; */
+      }
+      footer{
+          width: 100%;
+          height: 100px;
+          background-color: black;
+          padding: 10px;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+      }
+      body {
+        background: #fffdfe;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        /* border-top: 5px solid #33a0d0; */
+
+      }
+
+      .swiper {
+        width: 100%;
+        height: 80%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fffdfe;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       .confirm {
+          position: absolute;
+          top: 50%;
+          left: calc(10%);
+          width: 80%;
+          z-index: 100;
         padding: 20px;
         border: 2px solid black;
+        background-color:#fffdfe ;
+      }
+      input{
+          width: 300px;
+          height: 30px;
+        border-radius: 5px;
+      }
+      button{
+          background-color: yellow;
+          width: 80px;
+          height: 30px;
+      }
+      h1{
+        font-size: 45px;
+        color: white;
+        display: inline;
+        border-left: 2px solid #33a0d0;
+        padding-left: 10px;
+      }
+      h3{
+        font-size: 40px;
+      }
+      h5{
+        font-size: 15px;
+        color: white;
+
       }
     </style>
   </head>
-  <body>
-      <header>
 
-      </header>
-    <main>
-      <div>
-        <input type="text" name="create" />
-        <button name="create">Create</button>
-        <h3>Create</h3>
-        <ul id="created"></ul>
+<header>
+      <h1>Task App</h1>
+    </header>
+  <body>
+    <!-- Swiper -->
+    
+  
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <h3>Create New Task</h3>
+            <input type="text" name="create" />
+            <button name="create">Create</button>
+            
+            <ol id="created"></ol>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <h3>Progress</h3>
+            <ol id="progress"></ol>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <h3>Done</h3>
+            <ol id="done"></ol>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>Progress</h3>
-        <ul id="progress"></ul>
-      </div>
-      <div>
-        <h3>Done</h3>
-        <ul id="done"></ul>
-      </div>
-    </main>
-    <footer>
-        
-    </footer>
+      <div class="swiper-pagination"></div>
+    </div>    
+  
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
   </body>
+    <footer>
+      <h5>
+          Powered by superMario737
+      </h5>
+    </footer>
+
+
 </html>
