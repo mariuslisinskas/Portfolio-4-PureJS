@@ -75,6 +75,9 @@
           width: 76%;
           height: 30px;
         border-radius: 5px;
+        font-size: large;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Rajdhani', sans-serif; 
       }
       button{
           width: 20%;
@@ -92,6 +95,9 @@
           text-align: left;
           font-weight: bolder;
           padding: 5px;
+      }
+      li::marker{
+          font-weight: 1000;
       }
       ol li button{
           float: right;
