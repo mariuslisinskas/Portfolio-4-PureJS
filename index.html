@@ -28,31 +28,39 @@
     <!-- Swiper -->
   <header>
     <h1>Task App</h1>
-    <div class="help-tip">
-        <p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
-    </div>
  
 </header>
 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div>
-            <h3>Create New Task</h3>
-            <input type="text" name="create" placeholder="Create new task.."/>
-            <button name="create">Create</button>
+          <div class="page">
+              
+            <div class="page-header">
+                <div class="page-header-h"><h3>Create New Task</h3></div>
+                <div class="help-tip">
+                    <p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+                </div>
+            </div>
+                  
 
+                  
+            
+            
+            <input type="text" name="create" placeholder="Create new task.."/>
+            <button class="create" name="create">Create</button>
+            
             <ol id="created"></ol>
           </div>
         </div>
         <div class="swiper-slide">
-          <div>
-            <h3>Progress</h3>
+          <div class="page">
+            <h3>In Progress</h3>
             <ol id="progress"></ol>
           </div>
         </div>
         <div class="swiper-slide">
-          <div>
+          <div class="page">
             <h3>Done</h3>
             <ol id="done"></ol>
           </div>

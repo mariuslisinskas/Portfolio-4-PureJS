@@ -57,9 +57,17 @@
         height: 100%;
         object-fit: cover;
       }
-      .swiper-slide div{
+      .page{
           min-width: 40vw;
           max-width: 1000px;
+      }
+      .page-header{
+          width: 100%;
+          height: auto;
+      }
+      .page-header-h{
+          width: 93%;
+          display: inline-block;
       }
       .confirm {
           position: absolute;    
@@ -84,7 +92,7 @@
         font-family: 'Pacifico', cursive;
         font-family: 'Rajdhani', sans-serif; 
       }
-      button{
+      button.create{
           width: 20%;
           height: 36px;
           border-radius: 5px;
@@ -105,7 +113,10 @@
           font-weight: 1000;
       }
       ol li button{
-          float: right;
+        border-radius: 5px;
+        height: 24px;
+        margin-left: 10px;
+        float: right;
       }
       h1{
         font-size: 45px;
@@ -116,6 +127,7 @@
       }
       h3{
         font-size: 40px;
+        margin: 0 0 10px 0;
       }
       h5{
         font-size: 15px;
@@ -126,14 +138,14 @@
 
       .help-tip{
         display: inline-block;
+        width: 5%;
         vertical-align: top;
-        text-align: center;
-        background-color: white;
+        background-color: black;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-        line-height: 30px;
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 15px;
         cursor: default;
     }
     
@@ -141,13 +153,13 @@
         content:'?';
         font-size: large;
         font-weight: bold;
-        color:black;
+        color:#33a0d0;
     }
     
     .help-tip:hover p{
         position: absolute;
-        top: calc(30vh);
-        left: 100px;
+        top: calc(28vh);
+        left: 190px;
         display:block;
         transform-origin: 100% 0%;
     
@@ -160,7 +172,7 @@
     .help-tip p{    /* The tooltip */
         display: none;
         text-align: left;
-        background-color: #1E2021;
+        background-color: black;
         padding: 20px;
         width: 300px;
         position: absolute;
