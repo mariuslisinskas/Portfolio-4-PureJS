@@ -58,8 +58,8 @@
         object-fit: cover;
       }
       .swiper-slide div{
-          min-width: 30vw;
-          max-width: 40vw;
+          min-width: 40vw;
+          max-width: 1000px;
       }
       .confirm {
           position: absolute;
