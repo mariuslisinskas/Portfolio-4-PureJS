@@ -3,65 +3,53 @@
   <head>
     <meta charset="utf-8" />
     <title>SwiperTasks</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@300&display=swap" rel="stylesheet"/>
     <script src="app.js" defer></script>
-    <!-- Demo styles -->
   </head>
 
   <body>
-    <!-- Swiper -->
-  <header>
-    <h1>Task App</h1>
- 
+
+    <header>
+      <h1>Task App</h1>
     </header>
 
+    <!-- SWIPER BODY -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+        <!-- SLIDE 1 -->
         <div class="swiper-slide">
           <div class="page">
-              
             <div class="page-header">
-                <div class="help-tip">
-                    <p>Double click on created task item to change status to: In Progress or Done.</p>
-                </div>                
-                <div class="page-header-h">
-                    <h3>Create New Task</h3>
-                </div>
-
+              <div class="help-tip">
+                <p>
+                  Double click on created task item to change status to: In
+                  Progress or Done.
+                </p>
+              </div>
+              <div class="page-header-h">
+                <h3>Create New Task</h3>
+              </div>
             </div>
-                  
-
-                  
-            
-            
-            <input type="text" name="create" placeholder="Create new task.."/>
+            <input type="text" name="create" placeholder="Create new task.." />
             <button class="create" name="create">Create</button>
-            
             <ol id="created"></ol>
           </div>
         </div>
+        <!-- SLIDE 2 -->
         <div class="swiper-slide">
           <div class="page">
             <h3>In Progress</h3>
             <ol id="progress"></ol>
           </div>
         </div>
+        <!-- SLIDE 3 -->
         <div class="swiper-slide">
           <div class="page">
             <h3>Done</h3>
@@ -72,6 +60,10 @@
       <div class="swiper-pagination"></div>
     </div>
 
+    <footer>
+      <h5>Powered by superMario737</h5>
+    </footer>
+    
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -84,10 +76,6 @@
         },
       });
     </script>
-  <footer>
-    <h5>Powered by superMario737</h5>
-  </footer>
-
 
   </body>
 </html>
