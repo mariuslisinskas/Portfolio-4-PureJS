@@ -1,6 +1,6 @@
       body {
         position: relative;
-        height: 100vh;
+        height: 90vh;
         width: 100vw;
         font-family: 'Pacifico', cursive;
         font-family: 'Rajdhani', sans-serif; 
@@ -11,19 +11,22 @@
       header{
           position: relative;
           width: 100%;
-          height: 5%;
+          height: 5vh;
           background-color: black;
           padding: 30px;
           /* border-bottom: 5px solid #ee0405; */
       }
       footer{
           width: 100%;
-          height: 10%;
+          height: 15vh;
           background-color: black;
           position: relative;
           display: flex;
           align-items: flex-end;
           justify-content: flex-end;
+      }
+      details{
+          margin-bottom: 20px;
       }
 
       .swiper {
@@ -66,11 +69,13 @@
           height: auto;
       }
       .page-header-h{
-          width: 93%;
+          width: 100%;
           display: inline-block;
       }
-      .confirm {
-          position: absolute;    
+      .confirm{
+          position: absolute;  
+          max-width: 70%;
+          height: auto;  
           top: 50%;
           left: calc(10%);
           width: 80%;
@@ -126,19 +131,20 @@
         padding-left: 10px;
       }
       h3{
-        font-size: 40px;
+        font-size: 2.5rem;
         margin: 0 0 10px 0;
       }
       h5{
         font-size: 15px;
         color: white;
-        margin-right: 50px;
+        margin-right: 10px;
+        padding-bottom: 10px;
 
       }
 
       .help-tip{
-        display: inline-block;
-        width: 5%;
+        position: relative;
+        float: right;
         vertical-align: top;
         background-color: black;
         border-radius: 50%;
@@ -153,16 +159,16 @@
         content:'?';
         font-size: large;
         font-weight: bold;
-        color:#33a0d0;
+        color:white;
     }
     
     .help-tip:hover p{
-        position: absolute;
-        top: calc(28vh);
-        left: 190px;
+        top: -25%;
+        left: calc(-291px);
+        z-index: 100;
         display:block;
+        position: relative;
         transform-origin: 100% 0%;
-    
         -webkit-animation: fadeIn 0.3s ease-in-out;
         animation: fadeIn 0.3s ease-in-out;
         z-index: 120;
@@ -174,7 +180,7 @@
         text-align: left;
         background-color: black;
         padding: 20px;
-        width: 300px;
+        width: 275px;
         position: absolute;
         border-radius: 3px;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
