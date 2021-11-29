@@ -62,14 +62,19 @@
           max-width: 1000px;
       }
       .confirm {
-          position: absolute;
+          position: absolute;    
           top: 50%;
           left: calc(10%);
           width: 80%;
           z-index: 100;
+          font-weight: bolder;
         padding: 20px;
         border: 2px solid black;
         background-color:#fffdfe ;
+      }
+      .confirm button{
+          margin-left: 5px;
+          /* float: right; */
       }
       input{
           width: 76%;
