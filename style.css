@@ -137,8 +137,7 @@
       h5{
         font-size: 15px;
         color: white;
-        margin-right: 10px;
-        padding-bottom: 10px;
+        margin:0 10px 10px 0;
 
       }
 
@@ -150,7 +149,7 @@
         border-radius: 50%;
         width: 15px;
         height: 15px;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 15px;
         cursor: default;
     }
@@ -186,7 +185,7 @@
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         right: -4px;
         color: #FFF;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 1.4;
     }
     
