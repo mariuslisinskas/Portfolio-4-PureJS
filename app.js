@@ -141,7 +141,7 @@ class ToDoListDOM {
     }
 
     toProgressEvent(id) {
-        document.querySelector('[data-id="' + id + '"]').addEventListener('click', () => {
+        document.querySelector('[data-id="' + id + '"]').addEventListener('dblclick', () => {
             const todo = ToDoList.lists.get(CREATED).list.get(id);
             ToDoList.lists.get(CREATED).list.delete(id);
             ToDoList.lists.get(CREATED).setListToStorage();
@@ -153,7 +153,7 @@ class ToDoListDOM {
     }
 
     toDoneEvent(id) {
-        document.querySelector('[data-id="' + id + '"]').addEventListener('click', () => {
+        document.querySelector('[data-id="' + id + '"]').addEventListener('dblclick', () => {
             const todo = ToDoList.lists.get(PROGRESS).list.get(id);
             ToDoList.lists.get(PROGRESS).list.delete(id);
             ToDoList.lists.get(PROGRESS).setListToStorage();
